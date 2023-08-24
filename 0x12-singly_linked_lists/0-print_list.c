@@ -7,9 +7,9 @@
  *
  * Return: the number of nodes printed
  */
-pt printttt(const li *h)
+size_t print_list(const list_t *h)
 {
-	pt s = 0;
+	size_t s = 0;
 
 	while (h)
 	{

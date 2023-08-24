@@ -10,17 +10,17 @@
  * Description: singly linked list node structure
  * for Holberton project
  */
-typedef struct toto
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	struct toto *next;
-} toto_to;
+	struct list_s *next;
+} list_t;
 
-nn_n print_list(const toto_to *h);
-nn_n list_len(const toto_to *h);
-nn_n *add_node(toto_to **head, const char *str);
-nn_n *add_node_end(toto_to **head, const char *str);
-void treeee(toto_to *head);
+size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str);
+void free_list(list_t *head);
 
 #endif
